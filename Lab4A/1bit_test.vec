@@ -1,0 +1,46 @@
+radix 1 1 1 1 1 1 1
+io i i i i i i i
+vname decoder_en write_data pre_en write_enable read_en pre_en_SA sense_en
+tunit 1ps
+trise 5
+tfall 5
+vih 1.0
+vil 0.0
+
+* NOTE: pre_en, read_en, and pre_en_SA are assumed Active-LOW (0=ON, 1=OFF).
+* decoder_en, write_enable, sense_en are assumed Active-HIGH (1=ON, 0=OFF).
+*
+* Time || dec_en || w_data || pre_en || w_en || read_en || preSA || sense_en
+
+* 0. INITIALIZE (Precharge BL and SA)
+0         0         0         0         0       1          0        0
+
+* 1. WRITE '1' (Turn off precharge, assert WL and WE)
+200       1         1         1         1       1          1        0
+
+* 2. END WRITE (Turn off WL/WE, turn precharge back on)
+600       0         1         0         0       1          0        0
+
+* 3. READ '1' (Turn off precharge, turn on Read path, assert WL)
+1000      1         0         1         0       0          1        0
+
+* 4. SENSE (Wait for BL/BLb delta, then assert sense_en, turn off WL)
+1200      0         0         1         0       0          1        1
+
+* 5. END READ (Turn off sense, turn precharge back on)
+1400      0         0         0         0       1          0        0
+
+* 6. WRITE '0' (Turn off precharge, assert WL and WE)
+1800      1         0         1         1       1          1        0
+
+* 7. END WRITE (Turn off WL/WE, turn precharge back on)
+2200      0         0         0         0       1          0        0
+
+* 8. READ '0' (Turn off precharge, turn on Read path, assert WL)
+2600      1         0         1         0       0          1        0
+
+* 9. SENSE (Wait for BL/BLb delta, then assert sense_en, turn off WL)
+2800      0         0         1         0       0          1        1
+
+* 10. END SIMULATION (Turn off sense, turn precharge back on)
+3000      0         0         0         0       1          0        0

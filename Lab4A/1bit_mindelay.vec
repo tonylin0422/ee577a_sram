@@ -1,0 +1,56 @@
+radix 1 1 1 1 1 1 1
+io i i i i i i i
+vname decoder_en write_data pre_en write_enable read_en pre_en_SA sense_en
+tunit 1ps
+trise 5
+tfall 5
+vih 1.0
+vil 0.0
+
+* NOTE: pre_en, read_en, and pre_en_SA are Active-LOW (0=ON, 1=OFF).
+* decoder_en, write_enable, sense_en are Active-HIGH (1=ON, 0=OFF).
+*
+* Time || dec_en || w_data || pre_en || w_en || read_en || preSA || sense_en
+
+* 0. INITIALIZE (Start Precharge)
+0         0         0         0         0       1          0        0
+
+* --- CYCLE 1: WRITE '1' ---
+* Start Write (Wait 50ps buffer. Assert WL, WE, and Data)
+50        1         1         1         1       1          1        0
+
+* End Write (350ps active time. Turn off WL/WE, start precharge)
+400       0         1         0         0       1          0        0
+
+
+* --- CYCLE 2: READ '1' ---
+* Start Read (Wait tight 200ps for WL to fall. Assert WL, open read path)
+600       1         0         1         0       0          1        0
+
+* Fire Sense Amp (Wait 250ps to allow WL to rise AND bitlines to split)
+850       0         0         1         0       0          1        1
+
+* End Read (150ps hold time. Turn off WL and SA, start precharge)
+1000      0         0         0         0       1          0        0
+
+
+* --- CYCLE 3: WRITE '0' ---
+* Start Write (Wait tight 200ps for WL to fall. Assert WL, WE, Data=0)
+1200      1         0         1         1       1          1        0
+
+* End Write (350ps active time. Turn off WL/WE, start precharge)
+1550      0         0         0         0       1          0        0
+
+
+* --- CYCLE 4: READ '0' ---
+* Start Read (Wait tight 200ps for WL to fall. Assert WL, open read path)
+1750      1         0         1         0       0          1        0
+
+* Fire Sense Amp (Wait 250ps to allow WL to rise AND bitlines to split)
+2000      0         0         1         0       0          1        1
+
+* End Sim (150ps hold time. Turn off everything, return to precharge)
+2150      0         0         0         0       1          0        0
+
+* Padding to let waveforms finish drawing
+2200      0         0         0         0       1          0        0
