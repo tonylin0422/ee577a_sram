@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      dhkwak
+HostName                       viterbi-scf01.vlab.usc.edu
+ProcessIdentifier              452492
+ProcessCreationTime_UTC        1776107323
+ProcessCreationTime_Readable   Mon Apr 13 12:08:43 2026 PDT
+AppIdentifier                  /tools/cadence/IC231/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/dhkwak@vlab.usc.edu/work_gpdk045/Lab4A/SRAM_512b_array_copy2/maestro/maestro.sdb
+TimeEditLocked                 Mon Apr 13 12:19:08 2026 PDT
