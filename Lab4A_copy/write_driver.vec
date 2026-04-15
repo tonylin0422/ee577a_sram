@@ -1,0 +1,25 @@
+radix 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+io i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i
+vname W_en data<15> data<14> data<13> data<12> data<11> data<10> data<9> data<8> data<7> data<6> data<5> data<4> data<3> data<2> data<1> data<0> data_b<15> data_b<14> data_b<13> data_b<12> data_b<11> data_b<10> data_b<9> data_b<8> data_b<7> data_b<6> data_b<5> data_b<4> data_b<3> data_b<2> data_b<1> data_b<0>
+tunit 1ns
+trise 0.1
+tfall 0.1
+vih 1.0
+vil 0.0
+
+* --- INIT ---
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+* --- TEST: WRITE 0123 ---
+* Binary Data:   0000 0001 0010 0011
+* Binary Data_b: 1111 1110 1101 1100
+10 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 1 1 1 1 1 1 1 1 0 1 1 0 1 1 1 0 0
+
+20 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 1 1 1 1 1 1 1 1 0 1 1 0 1 1 1 0 0
+
+* --- TEST: WRITE FEDC ---
+* Binary Data:   1111 1110 1101 1100
+* Binary Data_b: 0000 0001 0010 0011
+30 1 1 1 1 1 1 1 1 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 1
+
+40 0 1 1 1 1 1 1 1 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 1
