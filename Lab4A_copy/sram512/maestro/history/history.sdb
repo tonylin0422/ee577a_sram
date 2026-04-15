@@ -2,9 +2,9 @@
 <setupdb version="7">history
 	<active>Active Setup</active>
 	<history>History
-		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="running">ExplorerRun.0
-			<timestamp>Apr 15 00:16:16 2026</timestamp>
-			<uuid>{35ce55c6-6b96-441d-bc86-71ccad6545c6}</uuid>
+		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
+			<timestamp>Apr 15 14:52:15 2026</timestamp>
+			<uuid>{de99b26f-c47a-4cd4-ae94-28d8325cf1bb}</uuid>
 			<locked>0</locked>
 			<mode>Single Run, Sweeps and Corners</mode>
 			<resultsname>/home/tlin9034@vlab.usc.edu/work_gpdk045/Lab4A_copy/sram512/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>

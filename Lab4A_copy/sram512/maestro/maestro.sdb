@@ -29,11 +29,7 @@
 						<value>active</value>
 					</option>
 				</tooloptions>
-				<outputs>
-					<output>/s
-						<evalType>point</evalType>
-					</output>
-				</outputs>
+				<outputs></outputs>
 			</test>
 		</tests>
 		<currentmode>Single Run, Sweeps and Corners</currentmode>

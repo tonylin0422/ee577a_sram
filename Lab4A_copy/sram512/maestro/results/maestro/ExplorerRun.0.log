@@ -1,3 +1,13 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Wed Apr 15 00:16:30 2026 
+Current time: Wed Apr 15 14:52:16 2026 
+Best design point: 1
+Design specs: 
+	Lab4A_copy_sram512_1	corner	Nominal - 
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Wed Apr 15 14:53:26 2026 
