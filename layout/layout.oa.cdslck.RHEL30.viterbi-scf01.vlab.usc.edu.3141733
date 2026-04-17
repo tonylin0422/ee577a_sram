@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      dhkwak
+HostName                       viterbi-scf01.vlab.usc.edu
+ProcessIdentifier              3141733
+ProcessCreationTime_UTC        1776378168
+ProcessCreationTime_Readable   Thu Apr 16 15:22:48 2026 PDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/dhkwak@vlab.usc.edu/work_gpdk045/Lab4A_copy/sram512/layout/layout.oa.cdslck
+TimeEditLocked                 Thu Apr 16 16:59:40 2026 PDT
