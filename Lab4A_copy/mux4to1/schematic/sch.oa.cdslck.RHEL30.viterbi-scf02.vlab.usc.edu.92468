@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Thu Apr 16 18:38:27 2026 PDT
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/tlin9034@vlab.usc.edu/work_gpdk045/Lab4A_copy/sram512/schematic/sch.oa.cdslck
-TimeEditLocked                 Thu Apr 16 23:14:46 2026 PDT
+FilePathUsedToEditLock         /home/tlin9034@vlab.usc.edu/work_gpdk045/Lab4A_copy/mux4to1/schematic/sch.oa.cdslck
+TimeEditLocked                 Thu Apr 16 23:09:13 2026 PDT
