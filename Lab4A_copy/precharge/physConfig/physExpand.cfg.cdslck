@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Thu Apr 16 23:02:18 2026 PDT
 AppIdentifier                  /tools/cadence/IC231/tools/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       
-FilePathUsedToEditLock         /home/dhkwak@vlab.usc.edu/work_gpdk045/Lab4A_copy/precharge/physConfig/physExpand.cfg
-TimeEditLocked                 Fri Apr 17 23:35:36 2026 PDT
+FilePathUsedToEditLock         /home/dhkwak@vlab.usc.edu/work_gpdk045/EE577A_SRAM/precharge/physConfig/physExpand.cfg
+TimeEditLocked                 Mon Apr 20 02:59:27 2026 PDT
