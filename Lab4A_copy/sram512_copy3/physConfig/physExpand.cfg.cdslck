@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      dhkwak
+HostName                       viterbi-scf01.vlab.usc.edu
+ProcessIdentifier              3417277
+ProcessCreationTime_UTC        1776813929
+ProcessCreationTime_Readable   Tue Apr 21 16:25:29 2026 PDT
+AppIdentifier                  /tools/cadence/IC231/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/dhkwak@vlab.usc.edu/work_gpdk045/Lab4A_copy/sram512_copy3/physConfig/physExpand.cfg
+TimeEditLocked                 Tue Apr 21 16:38:35 2026 PDT
